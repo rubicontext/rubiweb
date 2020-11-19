@@ -1,0 +1,31 @@
+{% extends "admin/base_site.html" %}
+{% load admin_urls %}
+
+ 
+{% block title %}Administration - Rubicontext {% endblock title %}
+  
+  {% block content %}
+
+  {% if currentTask %}
+
+
+  	1 Admin task is currently running
+
+  {% endif %}
+
+
+  {% block scrap %}
+<div class="row">
+  <div class="grey_subtitle">
+      Scrap all documents for all projects
+      
+
+      <a href="/text/admin_scrap_auto" projectId="4" id="add-row" class="btn btn-default">
+      			<i class="glyphicon glyphicon-plus icon-success"></i><b> Scrap new documents</b></a>
+     </div>
+</div>
+
+  {% endblock scrap %}
+
+
+ {% endblock content %}

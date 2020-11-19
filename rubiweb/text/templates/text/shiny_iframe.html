@@ -1,0 +1,13 @@
+{% extends "admin/base_site.html" %}
+{% load admin_urls %}
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+ 
+{% block title %}Administration - Rubicontext {% endblock title %}
+  
+  {% block content %}
+
+ <div class="box">
+<iframe src="http://localhost:3838/rubi-apps/admin?actionType=processFull" name="riframe" frameborder="0" width="1000" height="500" scrolling="auto"></iframe>
+</div>
+
+ {% endblock content %}

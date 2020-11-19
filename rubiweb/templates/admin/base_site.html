@@ -1,0 +1,130 @@
+{% extends "admin/base.html" %}
+
+
+{% block title %}{{ title }} | Rubitrack admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}"><div class="green_flashy">Rubi</div>CONTEXT - What does the <div class="green_flashy">Internet</div> says about you?</a></h1>
+<a href="/admin/text/project/"><div class="green_flashy">Projects</div></a> -- <a href="/text/admin_general">Administration</a> -- <a href="/admin">Graphs</a> -- <a href="/admin">Help</a>
+
+<link rel="shortcut icon" type="image/png" href="/static/favicon.ico'/"/>
+<!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+<link rel="shortcut icon" type="image/png" href="/static/favicon.ico'/"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block extrahead %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <style>
+        a, a:link, a:visited {
+            color:#283C4F;
+        }
+
+        div.inline { 
+            float:left; 
+        }
+
+        .clearBoth { 
+            clear:both; 
+        }
+
+        div.breadcrumbs {
+            background-color:gray;
+        }   
+
+        #header {
+            background-color:#283C4F;
+            align-items:stretch;
+        }
+
+        #branding h1 a:visited {
+            color:white;
+        }
+
+        .module caption {
+            background-color:#283C4F;
+        }
+
+        div.now_playing_track {
+            font-size: 42px;
+            color:green;
+            background-color:#283C4F;
+            display: inline;
+        }
+
+        div.red_alert {
+            font-size: 40px;
+            color:red;
+            display: inline;
+        }
+
+        div.green_flashy {
+            color:#52d3aa;
+            display: inline;
+        }
+
+        div.track_big_blue {
+            font-size: 42px;
+            color:#283C4F;
+            display: inline;
+        }
+
+        div.grey_subtitle {
+            font-size: 20px;
+            font-weight: bold;
+            color:gray;
+            vertical-align: bottom;
+        }
+
+         div.blue_subtitle_small {
+            font-size: 20px;
+            font-weight: bold;
+            color:#283C4F;
+            display: inline;
+        }
+
+        .good_transition {
+            color:green;
+        }
+
+        .bad_transition {
+            text-align: center;
+            color:red;
+        }
+
+        td.button_add {
+            text-align: center;
+            color:red;
+            border-width: 1;
+            border-color: blue;
+        }
+
+        td.original p {
+            color:red;
+        }
+
+        .module h2 {
+            background-color: gray;
+        }
+
+        .button, input[type=submit], input[type=button], .submit-row input, a.button {
+            background:#283C4F;
+        }
+
+        .icon-success {
+            color: #5CB85C;
+        }
+
+
+    </style>
+{% endblock %}
